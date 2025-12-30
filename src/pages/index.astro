@@ -71,7 +71,27 @@ const weddingUrl = import.meta.env.PROD
   
   /* Ensure high contrast for accessibility */
   main {
-    background: radial-gradient(ellipse at center, #0B2E33 0%, #071e20 100%);
+    background-image: url('/images/second.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(11, 46, 51, 0.75);
+    z-index: 0;
+  }
+  
+  main > * {
+    position: relative;
+    z-index: 1;
   }
   
   /* Enhance button tap target for mobile */

@@ -3,8 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SuccessCheckmark from '../components/SuccessCheckmark.astro';
 import QRCode from '../components/QRCode.astro';
 
-// Get the full URL for the wedding page
-const weddingUrl = `${Astro.url.origin}/wedding`;
+// Use production URL for QR code
+// Update this to your custom domain once configured: https://tessy.shizzo.wedding.com/wedding
+const weddingUrl = import.meta.env.PROD 
+  ? 'https://tessy-shizzo-wedding.vercel.app/wedding'
+  : `${Astro.url.origin}/wedding`;
 ---
 
 <BaseLayout 

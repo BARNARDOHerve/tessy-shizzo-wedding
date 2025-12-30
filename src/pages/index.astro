@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SuccessCheckmark from '../components/SuccessCheckmark.astro';
+import QRCode from '../components/QRCode.astro';
+
+// Get the full URL for the wedding page
+const weddingUrl = `${Astro.url.origin}/wedding`;
+---
+
+<BaseLayout 
+  title="Success! QR Code Scanned"
+  description="You've successfully scanned the QR code. Discover what's next and take action."
+>
+  <main class="min-h-screen flex items-center justify-center px-4 py-12 md:py-20">
+    <div class="max-w-4xl w-full">
+      <!-- Hero Section -->
+      <section class="text-center space-y-8">
+        
+        <!-- Success Checkmark Animation -->
+        <SuccessCheckmark />
+        
+        <!-- Headline -->
+        <h1 class="text-4xl md:text-6xl font-black leading-tight">
+          <span class="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">
+            You've Scanned Successfully!
+          </span>
+        </h1>
+        
+        <!-- Intro Text -->
+        <div class="space-y-4 text-gray-300 text-lg md:text-xl max-w-xl mx-auto">
+          <p class="leading-relaxed">
+            Welcome! You've just unlocked exclusive content by scanning this QR code.
+          </p>
+          <p class="leading-relaxed">
+            Take the next step to explore what's waiting for you and get started on your journey.
+          </p>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="pt-8">
+          <QRCode url={weddingUrl} size={250} />
+        </div>
+        
+        <!-- Optional: Additional Info -->
+        <div class="pt-12 text-sm text-gray-500">
+          <p>Fast. Secure. Built for you.</p>
+        </div>
+        
+      </section>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  /* Additional mobile-first optimizations */
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.1;
+    }
+  }
+  
+  /* Ensure high contrast for accessibility */
+  main {
+    background: radial-gradient(ellipse at center, rgba(26, 26, 26, 0.8) 0%, rgba(10, 10, 10, 1) 100%);
+  }
+  
+  /* Enhance button tap target for mobile */
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+</style>

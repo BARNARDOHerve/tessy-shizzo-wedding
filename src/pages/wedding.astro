@@ -1,0 +1,233 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Tessy & Shizzo Wedding - January 10th, 2026"
+  description="You are warmly invited to celebrate the union of Kayitesi Yvonne (Tessy) & Ishimwe A. Shizzo on January 10th, 2026."
+>
+  <div class="min-h-screen relative">
+    <!-- Gradient Background Overlay -->
+    <div class="fixed inset-0 bg-gradient-to-br from-emerald-50/40 via-transparent to-amber-50/30 pointer-events-none -z-10"></div>
+    
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+      
+      <!-- Header -->
+      <header class="text-center mb-8 sm:mb-12">
+        <div class="inline-block px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs uppercase tracking-widest mb-3 font-semibold">
+          Wedding Celebration
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-emerald-800 tracking-wide uppercase mb-4">
+          Tessy
+          <span class="text-amber-600 px-2">&</span>
+          Shizzo
+        </h1>
+        
+        <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto mb-6 leading-relaxed px-4">
+          You are warmly invited to celebrate the union of
+          <strong>Kayitesi Yvonne (Tessy)</strong> & <strong>Ishimwe A. Shizzo</strong>.
+        </p>
+        
+        <!-- Navigation -->
+        <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm" aria-label="Main navigation">
+          <a href="#details" class="text-gray-600 hover:text-emerald-700 border-b-2 border-transparent hover:border-emerald-200 pb-1 transition-colors">Details</a>
+          <a href="#program" class="text-gray-600 hover:text-emerald-700 border-b-2 border-transparent hover:border-emerald-200 pb-1 transition-colors">Program</a>
+          <a href="#contacts" class="text-gray-600 hover:text-emerald-700 border-b-2 border-transparent hover:border-emerald-200 pb-1 transition-colors">Contacts</a>
+        </nav>
+      </header>
+      
+      <!-- Main Grid Layout -->
+      <main class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8">
+        
+        <!-- LEFT: Details & Program (3/5 width) -->
+        <section class="lg:col-span-3 bg-white/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-xl border border-white/70" id="details">
+          
+          <!-- Bible Verse -->
+          <div class="bg-amber-50/80 border-l-4 border-amber-600 rounded-lg p-5 mb-8 italic text-gray-700 leading-relaxed">
+            <p class="text-sm sm:text-base">
+              The man said, "This is now bone of my bones and flesh of my flesh; she
+              shall be called 'woman,' for she was taken out of man."
+            </p>
+            <small class="block mt-2 font-semibold not-italic text-amber-700 text-xs sm:text-sm">Genesis 2:23</small>
+          </div>
+          
+          <!-- Families Introduction -->
+          <div class="text-sm sm:text-base text-gray-700 leading-relaxed mb-8">
+            <p class="mb-4">
+              The families of
+              <span class="font-semibold text-emerald-800">MUKASA Joseph</span> represented by
+              <span class="font-semibold text-emerald-800">RUGAMBWA Joel</span> and
+              <span class="font-semibold text-emerald-800">HAKIZIMANA Alex</span> represented by
+              <span class="font-semibold text-emerald-800">MAOMBI MANIRIHO Ferdinand</span> are delighted
+              to invite you to the wedding ceremony of their children:
+            </p>
+            <p class="font-semibold text-emerald-800 text-base sm:text-lg">
+              Kayitesi Yvonne (Tessy) & Ishimwe A. Shizzo
+            </p>
+          </div>
+          
+          <!-- Wedding Date Block -->
+          <div class="text-center my-8 py-5 px-6 bg-gradient-to-r from-transparent via-amber-50/60 to-transparent border border-amber-300/50 rounded-xl">
+            <div class="text-xs uppercase tracking-widest text-gray-500 mb-1">Wedding Date</div>
+            <div class="text-xl sm:text-2xl font-bold uppercase tracking-wide text-gray-800">
+              Saturday, January 10th, 2026
+            </div>
+          </div>
+          
+          <!-- Wedding Program -->
+          <section class="mt-8" id="program">
+            <h2 class="text-xl sm:text-2xl font-bold text-emerald-800 mb-6">Wedding Program</h2>
+            
+            <div class="space-y-6">
+              <!-- Agenda Item 1 -->
+              <div class="grid grid-cols-1 sm:grid-cols-[auto,1fr] gap-2 sm:gap-4">
+                <div class="font-bold text-amber-600 text-base whitespace-nowrap">09:00 AM</div>
+                <div>
+                  <div class="text-gray-800 font-medium mb-1">Introduction and dowry giving</div>
+                  <div class="text-sm text-gray-500">INTARE ARENA (Rusororo)</div>
+                </div>
+              </div>
+              
+              <!-- Agenda Item 2 -->
+              <div class="grid grid-cols-1 sm:grid-cols-[auto,1fr] gap-2 sm:gap-4">
+                <div class="font-bold text-amber-600 text-base whitespace-nowrap">14:00 PM</div>
+                <div>
+                  <div class="text-gray-800 font-medium mb-1">Religious wedding ceremony</div>
+                  <div class="text-sm text-gray-500">INTARE ARENA GARDEN</div>
+                </div>
+              </div>
+              
+              <!-- Agenda Item 3 -->
+              <div class="grid grid-cols-1 sm:grid-cols-[auto,1fr] gap-2 sm:gap-4">
+                <div class="font-bold text-amber-600 text-base whitespace-nowrap">17:00 PM</div>
+                <div>
+                  <div class="text-gray-800 font-medium mb-1">Guests shall be hosted</div>
+                  <div class="text-sm text-gray-500">INTARE ARENA (Rusororo)</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Note -->
+          <div class="mt-8 p-5 rounded-xl bg-emerald-50/80 border border-emerald-200/60 text-sm sm:text-base text-emerald-900">
+            <p>
+              <strong class="text-emerald-800">Your presence is a special blessing to us!</strong><br />
+              For friends and family who cannot attend in person, you are invited to
+              follow the celebration live online.
+            </p>
+          </div>
+        </section>
+        
+        <!-- RIGHT: Couple Info, Watch Link, Contacts (2/5 width) -->
+        <aside class="lg:col-span-2 bg-white/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-xl border border-white/70 h-fit">
+          
+          <!-- Couple Names -->
+          <div class="mb-8">
+            <div class="text-xs uppercase tracking-widest text-gray-500 mb-3">The Couple</div>
+            <div class="font-serif text-2xl sm:text-3xl text-emerald-800 tracking-wide uppercase leading-snug">
+              <div>Kayitesi Yvonne</div>
+              <div class="text-lg tracking-wider mt-1 mb-3">(TESSY)</div>
+              <div class="text-amber-600 text-xl my-3">&</div>
+              <div class="mt-3">Ishimwe A. Shizzo</div>
+            </div>
+          </div>
+          
+          <!-- Watch Online Button -->
+          <a 
+            href="https://www.tessyandshizzo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center w-full py-4 px-6 rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white font-bold text-sm sm:text-base uppercase tracking-wide shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 mb-3"
+          >
+            <span class="mr-2 text-lg">▶</span>
+            Watch the Wedding Online
+          </a>
+          
+          <p class="text-xs sm:text-sm text-gray-600 mb-8 leading-relaxed">
+            Click this button to open the official website where you can watch the
+            wedding event and follow all the moments of the day.
+          </p>
+          
+          <!-- Contacts -->
+          <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6" id="contacts">
+            <!-- Tessy Contacts -->
+            <div>
+              <h3 class="text-base font-bold text-emerald-800 mb-3">Tessy</h3>
+              <ul class="space-y-1 text-sm text-gray-700">
+                <li>0784 353 885</li>
+                <li>0783 388 161</li>
+                <li>0781 966 884</li>
+              </ul>
+            </div>
+            
+            <!-- Shizzo Contacts -->
+            <div>
+              <h3 class="text-base font-bold text-emerald-800 mb-3">Shizzo</h3>
+              <ul class="space-y-1 text-sm text-gray-700">
+                <li>+1 (317) 386‑7251</li>
+                <li>0783 256 693</li>
+                <li>0722 638 197</li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+      </main>
+      
+      <!-- Footer -->
+      <footer class="text-center mt-12 text-sm text-gray-500">
+        <p>&copy; <span id="year"></span> Tessy &amp; Shizzo &middot; All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  // Set current year dynamically
+  const yearElement = document.getElementById('year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear().toString();
+  }
+  
+  // Smooth scroll for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href') || '');
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+</script>
+
+<style>
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Enhanced animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  main > section,
+  main > aside {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  main > aside {
+    animation-delay: 0.15s;
+  }
+</style>

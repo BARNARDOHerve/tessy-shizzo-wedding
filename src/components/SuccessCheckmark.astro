@@ -1,0 +1,72 @@
+---
+// Success Checkmark SVG Component
+---
+
+<div class="success-checkmark flex items-center justify-center mb-8">
+  <div class="checkmark-circle relative">
+    <svg 
+      class="w-32 h-32 md:w-40 md:h-40 animate-bounce-slow" 
+      viewBox="0 0 100 100" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <!-- Outer circle with glow effect -->
+      <circle 
+        cx="50" 
+        cy="50" 
+        r="45" 
+        fill="none" 
+        stroke="url(#gradient)" 
+        stroke-width="3"
+        class="drop-shadow-[0_0_15px_rgba(57,255,20,0.5)]"
+      />
+      
+      <!-- Checkmark path -->
+      <path 
+        d="M30 50 L42 62 L70 34" 
+        fill="none" 
+        stroke="url(#gradient)" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        class="checkmark-path"
+      />
+      
+      <!-- Gradient definition -->
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#39FF14;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</div>
+
+<style>
+  .checkmark-path {
+    animation: checkmark 0.5s ease-in-out 0.3s forwards;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+  }
+  
+  @keyframes checkmark {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .success-checkmark {
+    animation: fadeInScale 0.6s ease-out;
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
